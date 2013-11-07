@@ -1,0 +1,10 @@
+{
+  "from_email": "your_email@server.com",
+  "username": "username_for_email",
+  "password": "hunter2",
+  "mail_server": "smtp.gmail.com:587"
+  "send_times": [800, 2000],
+  "email_schedule": "schedule.txt",
+  "receiver_domain_name": "@mit.edu",
+  "msg": "sample message"
+}
