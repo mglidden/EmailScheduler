@@ -3,8 +3,9 @@
   "username": "username_for_email",
   "password": "hunter2",
   "mail_server": "smtp.gmail.com:587"
-  "send_times": [800, 2000],
+  "send_times": [8, 20],
   "email_schedule": "schedule.txt",
   "receiver_domain_name": "@mit.edu",
-  "msg": "sample message"
+  "msg_text": "Test message",
+  "msg_subject": "Test subject"
 }
