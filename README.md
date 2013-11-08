@@ -16,8 +16,8 @@ sudo pip python__crontab
 ```
 
 Copy or rename CONFIG.public to CONFIG.private. Modify the fields for your own email account:
-*from_email: the email address that sends all of the emails
-*username: the username for whatever email server you're using (if you are using a Gmail account, this is the same as from_email)
+	* from_email: the email address that sends all of the emails
+	* username: the username for whatever email server you're using (if you are using a Gmail account, this is the same as from_email)
 *password: the password for the email server
 *mail_server: the smtp address. If you're using Gmail, you don't have to change this.
 *send_times: the times (in hours, military time) that you want emails to be sent. The sample config sends emails at 8:00AM and 8:00PM
