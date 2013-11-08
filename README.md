@@ -16,6 +16,7 @@ sudo pip python__crontab
 ```
 
 Copy or rename CONFIG.public to CONFIG.private. Modify the fields for your own email account:
+
 	* from_email: the email address that sends all of the emails
 	* username: the username for whatever email server you're using (if you are using a Gmail account, this is the same as from_email)
 *password: the password for the email server
