@@ -8,11 +8,11 @@ Install
 =============
 Install python-crontab:
 ```
-sudo easy__install python-crontab
+sudo easy_install python-crontab
 ```
 or
 ```
-sudo pip python__crontab
+sudo pip python_crontab
 ```
 
 Copy or rename CONFIG.public to CONFIG.private. Modify the fields for your own email account:
@@ -29,4 +29,4 @@ Copy or rename CONFIG.public to CONFIG.private. Modify the fields for your own e
 
 Modify schedule.txt. It expects information in the same format: "mm/dd	email"
 
-Once you have updated CONFIG.private and schedule.txt, run install.py. Everything has been copied to /usr/local/bin/send__email. To update the schedule in the future, you should modify /usr/local/bin/send__email/schedule.txt
+Once you have updated CONFIG.private and schedule.txt, run install.py. Everything has been copied to /usr/local/bin/send_email. To update the schedule in the future, you should modify /usr/local/bin/send_email/schedule.txt
