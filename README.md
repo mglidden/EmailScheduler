@@ -22,7 +22,7 @@ Copy or rename CONFIG.public to CONFIG.private. Modify the fields for your own e
 	* password: the password for the email server
 	* mail_server: the smtp address. If you're using Gmail, you don't have to change this.
 	* send_times: the times (in hours, military time) that you want emails to be sent. The sample config sends emails at 8:00AM and 8:00PM
-	* email_schedule: the name of the text file containing your schedule. Unless you want to rename schedule.txt, you don't have to change this.
+	* email_schedule: the absolute path to the text file containing your schedule.
 	* receiver_domain_name: if schedule.txt does not include full email addresses, this will be appended to every receiver in the schedule.
 	* msg_text: the text of the message to be sent
 	* msg_subject: subject line for the message

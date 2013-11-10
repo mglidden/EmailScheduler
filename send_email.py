@@ -21,7 +21,7 @@ def send_email(receiver, config):
 
 install_dir = '/usr/local/bin/send_email/'
 config = json.loads(open('%sCONFIG.private' % (install_dir)).read())
-schedule_file = open('%s%s' % (install_dir, config['email_schedule']))
+schedule_file = open(config['email_schedule'])
 
 for line in schedule_file.read().splitlines():
   date_string, receiver = line.split('\t')

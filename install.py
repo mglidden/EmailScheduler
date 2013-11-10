@@ -14,7 +14,7 @@ if os.path.exists(install_dir):
 else:
   os.makedirs(install_dir)
 
-files_to_install = ['send_email.py', 'crontab.py', config['email_schedule'], 'CONFIG.private']
+files_to_install = ['send_email.py', 'crontab.py', 'CONFIG.private']
 for filename in files_to_install:
   copyfile(filename, '%s/%s' % (install_dir, filename))
 
@@ -26,8 +26,8 @@ for old_job in cron.find_command(cmd):
 
 job = cron.new(command='python %s/send_email.py' % (install_dir))
 job.enable()
-job.minute.on(0)
-for hour in config['send_times']:
-  job.hour.also.on(hour)
+#job.minute.on(0)
+#for hour in config['send_times']:
+#  job.hour.also.on(hour)
 
 cron.write()
