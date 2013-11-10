@@ -19,8 +19,9 @@ def send_email(receiver, config):
   server.sendmail(config['from_email'], construct_address(), 'Subject: %s\n\n%s' % (config['msg_subject'], config['msg_text']))
   server.quit()
 
-config = json.loads(open('CONFIG.private').read())
-schedule_file = open(config['email_schedule'])
+install_dir = '/usr/local/bin/send_email/'
+config = json.loads(open('%sCONFIG.private' % (install_dir)).read())
+schedule_file = open('%s%s' % (install_dir, config['email_schedule']))
 
 for line in schedule_file.read().splitlines():
   date_string, receiver = line.split('\t')
