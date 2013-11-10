@@ -26,8 +26,8 @@ for old_job in cron.find_command(cmd):
 
 job = cron.new(command='python %s/send_email.py' % (install_dir))
 job.enable()
-#job.minute.on(0)
-#for hour in config['send_times']:
-#  job.hour.also.on(hour)
+job.minute.on(0)
+for hour in config['send_times']:
+  job.hour.also.on(hour)
 
 cron.write()
